@@ -1,0 +1,37 @@
+name: Publish package to PyPI with PDM 📦.
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  pypi-publish:
+    name: Upload release to PyPI 🌎.
+    runs-on: ubuntu-latest
+    environment:
+      name: testpypi
+      url: https://pypi.org/p/app-pyside
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pdm-project/setup-pdm@v4
+        with:
+          cache: true
+          python-version: 3.11
+      - name: PDM build package 🔨.
+        run: |
+          pdm install
+          pdm build
+      - name: Publish package distributions to TestPyPI 🚀.
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          password: ${{ secrets.TEST_PYPI }}
+      - name: Upload artifact 💾.
+        uses: actions/upload-artifact@v4
+        with:
+          name: "python-package"
+          path: |
+            dist/*.whl
+            dist/*.tar.gz

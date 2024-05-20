@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+  <file alias="br.com.justcode.Qt">icons/br.com.justcode.Qt.png</file>
+  <file alias="application-exit">icons/application-exit.svg</file>
+  </qresource>
+  <qresource prefix="i18n">
+    <file alias="br.com.justcode.Qt.en_US">locales/en_US/br.com.justcode.Qt.en_US.qm</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,47 @@
+[project]
+name = "app-pyside"
+dynamic = ["version"]
+description = "Exemplo de como estruturar um projeto com Python e Qt."
+authors = [
+    {name = "Renato Cruz", email = "natorsc@gmail.com"},
+]
+dependencies = [
+    "PySide6>=6.7.0",
+]
+requires-python = ">=3.11,<3.13"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+[project.optional-dependencies]
+deploy = [
+    "nuitka>=2.2.3",
+    "pillow>=10.3.0",
+]
+
+[project.scripts]
+app-pyside = "app_pyside.app:main"
+
+[tool.pdm.scripts]
+test = "python -m unittest"
+designer = "pyside6-designer"
+linguist = "pyside6-linguist"
+pre_build = {call = "_scripts.pre_build:main"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "call"
+getter = "__version__:get_version"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "python-lsp-server[all]>=1.11.0",
+]
