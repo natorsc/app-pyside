@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-'''.'''
+"""."""
 
 import locale
 import sys
 
 from PySide6 import QtCore, QtGui, QtWidgets
-
 
 try:
     import resources_rc
@@ -13,6 +12,8 @@ try:
 except ModuleNotFoundError:
     from app_pyside import resources_rc
     from app_pyside.components.MainWindow import MainWindow
+
+RESOURCES_RC = resources_rc
 
 
 def main() -> None:
@@ -45,5 +46,5 @@ def main() -> None:
     sys.exit(application.exec())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''.'''
+"""."""
 
 from PySide6 import QtGui, QtWidgets
 

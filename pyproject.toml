@@ -1,47 +1,48 @@
-[project]
+[tool.poetry]
 name = "app-pyside"
-dynamic = ["version"]
-description = "Exemplo de como estruturar um projeto com Python e Qt."
-authors = [
-    {name = "Renato Cruz", email = "natorsc@gmail.com"},
-]
-dependencies = [
-    "PySide6>=6.7.0",
-]
-requires-python = ">=3.11,<3.13"
-readme = "README.md"
-license = {text = "MIT"}
+version = "0.1.0"
+description = ""
+authors = ["Renato Cruz <natorsc@gmail.com>"]
+maintainers = ["Renato Cruz <natorsc@gmail.com>"]
+readme = ["README.md", "README.pt-br.md"]
+license = "MIT"
+repository = "https://github.com/natorsc/app-pyside"
 classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-[project.optional-dependencies]
-deploy = [
-    "nuitka>=2.2.3",
-    "pillow>=10.3.0",
-]
 
-[project.scripts]
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pyside6 = "^6.7.2"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.13.0"
+ruff = "^0.5.0"
+
+[tool.poetry.scripts]
 app-pyside = "app_pyside.app:main"
 
-[tool.pdm.scripts]
-test = "python -m unittest"
-designer = "pyside6-designer"
-linguist = "pyside6-linguist"
-pre_build = {call = "_scripts.pre_build:main"}
-
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-[tool.pdm]
-distribution = true
+[tool.ruff]
+line-length = 79
+extend-exclude = ['resources', 'resources_rc.py']
 
-[tool.pdm.version]
-source = "call"
-getter = "__version__:get_version"
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 
-[tool.pdm.dev-dependencies]
-dev = [
-    "python-lsp-server[all]>=1.11.0",
-]
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+export = 'poetry export --without-hashes -o requirements.txt'
+format = 'ruff check . --fix && ruff format .'
+lint = 'ruff check . && ruff check . --diff'
+lupdate = 'python _scripts/translations.py'
+rcc = 'python _scripts/compile_resources.py'
+test = "python -m unittest"

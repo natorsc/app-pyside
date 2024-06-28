@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''.'''
+"""."""
 
 import sys
 import unittest
@@ -10,7 +10,6 @@ from app_pyside.components.MainWindow import MainWindow
 
 
 class TestMainWindow(unittest.TestCase):
-
     def setUp(self):
         if not QtWidgets.QApplication.instance():
             application = QtWidgets.QApplication(sys.argv)
@@ -18,18 +17,12 @@ class TestMainWindow(unittest.TestCase):
             application = QtWidgets.QApplication.instance()
         self.mainwindow = MainWindow()
 
-
     def test_label_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.label.objectName(),
-            second='label',
-        )
+        assert self.mainwindow.label.objectName() == 'label'
 
     def test_line_edit_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.line_edit.objectName(),
-            second='line_edit',
-        )
+        assert self.mainwindow.line_edit.objectName() == 'line_edit'
+
 
 if __name__ == '__main__':
     unittest.main()

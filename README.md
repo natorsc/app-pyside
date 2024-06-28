@@ -1,84 +1,89 @@
-![Exemplo de aplicativo feito com Python e PySide6](https://justcode.com.br/wp-content/uploads/2024/05/app-python-pyside-qt.webp "Exemplo de aplicativo feito com Python e PySide6")
+![Example of an application made with Python and PySide6](./docs/images/app-python-pyside-qt.webp "Example of an application made with Python and PySide6")
 
 <br>
 
-# Exemplo de como estruturar um projeto com Python e Qt
+[![en](https://img.shields.io/badge/lang-en-darkred.svg)](./README)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-darkgreen.svg)](./README.pt-br)
 
-[![natorsc - app-python-qt](https://img.shields.io/static/v1?label=natorsc&message=app-python-qt&color=blue&logo=github)](https://github.com/natorsc/app-python-qt "Ir para o repositório.")
+# Example of how to structure a project with Python and Qt
+
+[![natorsc - app-pyside](https://img.shields.io/static/v1?label=natorsc&message=app-pyside&color=blue&logo=github)](https://github.com/natorsc/app-pyside "Go to the repository.")
 &emsp;
-[![stars - app-python-qt](https://img.shields.io/github/stars/natorsc/app-python-qt?style=social)](https://github.com/natorsc/app-python-qt)
+[![stars - app-pyside](https://img.shields.io/github/stars/natorsc/app-pyside?style=social)](https://github.com/natorsc/app-pyside)
 &emsp;
-[![forks - app-python-qt](https://img.shields.io/github/forks/natorsc/app-python-qt?style=social)](https://github.com/natorsc/app-python-qt)
+[![forks - app-pyside](https://img.shields.io/github/forks/natorsc/app-pyside?style=social)](https://github.com/natorsc/app-pyside)
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](https://badges.mit-license.org/)
 
-[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm-project.org)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 
-## 📝 Descrição
+## 📝 Description
 
-Repositório exibe uma forma de estruturar um projeto que utiliza a linguagem de programação Python para criar um aplicativo com o binding PySide6 e toolkit gráfico Qt.
+Repository displays a way of structuring a project that uses the Python programming language to create an application with the PySide6 binding and Qt graphical toolkit.
 
-- [x] Realizar as traduções com o software Qt Linguist. `pyside6-linguist`.
-- [x] Padronizar a geração de arquivos de tradução (`*.ts`). `pyside6-lupdate`.
-- [x] Padronizar a compilação dos arquivos de tradução (`*.qm`). `pyside6-lrelease`.
-- [x] Padronizar a compilação dos recursos (resources) `*.qrc`. `pyside6-rcc`.
-- [x] Criar um binário/executável. `pyside6-deploy`.
-- [x] Criar um pacote do Python (`*.tar.gz` e `*.whl`). `pdm build`.
-- [x] Criar testes. `python -m unittest`.
-- [x] Criar um [Github Actions](https://github.com/features/actions) (`deploy-nuitka.yaml`) para automatizar o processo de deploy com Nuitka.
-- [x] Criar um Github Actions (`pdm-test-pypi.yaml`) para automatizar o envio do pacote python (`*.tar.gz` e `*.whl`) para o [https://test.pypi.org/](https://test.pypi.org/).
+### ToDo
 
----
-
-## 🛠 Tecnologias utilizadas
-
-Até o presente momento as seguintes tecnologias são utilizadas na construção do projeto:
-
-[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/ "Ir para o site.")
-&emsp;
-[![Qt](https://img.shields.io/badge/-Qt-blue?logo=qt&logoColor=white)](https://www.qt.io/ "Ir para o site.")
-&emsp;
-[![PySide6](https://img.shields.io/badge/-PySide6-blue?logo=pypi&logoColor=white)](https://pypi.org/project/PySide6/ "Ir para o PyPi.")
-&emsp;
-[![pdm-managed](https://img.shields.io/badge/pdm-managed-blue)](https://pdm-project.org "Ir para o pdm-project.org.")
+- [x] Perform translations with [Qt Linguist](https://doc.qt.io/qt-6/qtlinguist-index.html) software. 'pyside6-linguist'.
+- [x] Standardize the generation of translation files ('*.ts'). 'pyside6-lupdate'.
+- [x] Standardize the compilation of translation files ('*.qm'). `pyside6-lrelease`.
+- [x] Standardize the compilation of resources '*.qrc'. `pyside6-rcc`.
+- [x] Create a binary/executable. 'pyside6-deploy'.
+- [x] Create a Python package (`*.tar.gz` e `*.whl`). `poetry build`.
+- [x] Create Tests. `python -m unittest`.
+- [x] Create a [Github Actions](https://github.com/features/actions) (`deploy-nuitka.yaml`) to automate the deployment process with Nuitka.
+- [x] Create a Github Actions (`pdm-test-pypi.yaml`) to automate the submission of python package (`*.tar.gz' and '*.whl`) to [https://test.pypi.org/](https://test.pypi.org/).
 
 ---
 
-## 🤓 Autor
+## 🛠 Technologies used
 
-Repositório feito com 💙 por [Renato Cruz](https://github.com/natorsc) 🤜🤛 Entre em contato!
+To date, the following technologies have been used in the construction of the project:
 
-[![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Enviar e-mail.")
+[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/ "Go to the website.")
+&emsp;
+[![Qt](https://img.shields.io/badge/-Qt-blue?logo=qt&logoColor=white)](https://www.qt.io/ "Go to the website.")
+&emsp;
+[![PySide6](https://img.shields.io/badge/-PySide6-blue?logo=pypi&logoColor=white)](https://pypi.org/project/PySide6/ "Go to the PyPi.")
+&emsp;
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/ "Go to the website.")
+
+---
+
+## 🤓 Author
+
+Repository made with 💙 by [Renato Cruz](https://github.com/natorsc) 🤜🤛 Get in touch!
+
+[![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Send email.")
 
 Acompanhe conteúdos sobre programação e tecnologia em:
 
-[![justcode.com.br](https://img.shields.io/badge/-justcode.com.br-grey?logo=wordpress&logoColor=white)](https://justcode.com.br/ "Acessar o justCode.")
+[![justcode.com.br](https://img.shields.io/badge/-justcode.com.br-grey?logo=wordpress&logoColor=white)](https://justcode.com.br/ "Go to the website.")
 
-Uma das playlist que costumo ouvir quando estou estudando ou "codando" 😁:
+One of the playlists that I usually listen to when I'm studying or "coding" 😁:
 
 [![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Acessar playlist.")
 
 ---
 
-## 💝 Doações
+## 💝 Donations
 
-Obrigado por sua doação, é através dela que consigo manter este conteúdo 😊.
+Thank you for your donation, it is through her that I am able to keep this content 😊.
 
 ### Buy me a coffee
 
-[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-red?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/natorsc "Ajude a manter este projeto com uma doação.")
+[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-red?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/natorsc "Help sustain this project with a donation.")
 
-<img alt="bmc-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/bmc-qrcode.webp" title="Ajude a manter este projeto com uma doação." width="150"/>
+<img alt="bmc-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/bmc-qrcode.webp" title="Help sustain this project with a donation." width="150"/>
 
 ### Ko-Fi
 
-[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-orange?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Ajude a manter este projeto com uma doação.")
+[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-orange?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Help sustain this project with a donation.")
 
-<img alt="ko-fi-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/ko-fi-qrcode.webp" title="Ajude a manter este projeto com uma doação." width="150"/>
+<img alt="ko-fi-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/ko-fi-qrcode.webp" title="Help sustain this project with a donation." width="150"/>
 
 ### Pix
 
-<img alt="pix-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/pix-qrcode.webp" title="Ajude a manter este projeto com uma doação." width="150"/>
+<img alt="pix-qrcode" src="https://justcode.com.br/wp-content/uploads/2024/05/pix-qrcode.webp" title="Help sustain this project with a donation." width="150"/>
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
 
@@ -86,30 +91,30 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ## Extra
 
-### Erros
+### Errors
 
-Se ao executar o código for exibido o alerta:
+If you run the code and see the alert:
 
 ```bash
 qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
 ```
 
-instale o pacote `qt6-wayland` na sua distribuição Linux.
+install the `qt6-wayland` package on your Linux distribution.
 
 ### Qt
 
 - [Blog](https://www.qt.io/blog).
-- [Documentação Qt](https://doc.qt.io/).
-- [Documentação Qt for Python](https://doc.qt.io/qtforpython-6/).
+- [Qt Documentation](https://doc.qt.io/).
+- [Qt for Python Documentation](https://doc.qt.io/qtforpython-6/).
 
 ### KDE
 
-- [Site oficial](https://kde.org/).
+- [Official Site](https://kde.org/).
 - [Blogs](https://blogs.kde.org/).
 - [Adventures in Linux and KDE](https://pointieststick.com/).
 - [KDE Human Interface Guidelines (HIG)](https://develop.kde.org/hig/).
 
-### Ícones
+### Icons
 
 - [Cuttlefish](https://develop.kde.org/docs/features/icons/). O Cuttlefish pode ser instalado através do pacote plasma-sdk.
 - [Breeze (CDN)](https://cdn.kde.org/breeze-icons/icons.html).

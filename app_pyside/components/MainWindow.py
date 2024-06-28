@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-'''.'''
+"""."""
 
-from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets
 
 try:
     from components.MenuBar import MenuBar
@@ -10,7 +10,6 @@ except ModuleNotFoundError:
 
 
 class MainWindow(QtWidgets.QMainWindow):
-
     def __init__(self, parent=None, **kwargs):
         super().__init__(parent=parent)
         self.application = kwargs.get('application')
@@ -19,7 +18,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.resize(window_size)
         self.setMinimumSize(window_size)
         self.setObjectName('main_window')
-        self.setWindowTitle(self.tr('PySide6'))
+        self.setWindowTitle(self.tr('Python - PySide6 - Qt'))
 
         self.setMenuBar(
             MenuBar(
@@ -56,10 +55,8 @@ class MainWindow(QtWidgets.QMainWindow):
         if text.split():
             self.label.setText(text)
         else:
-            self.label.setText(
-                self.tr('Digite algo no campo de texto ;).')
-            )
+            self.label.setText(self.tr('Digite algo no campo de texto ;).'))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     pass

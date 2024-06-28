@@ -4,29 +4,29 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../../app_pyside/components/MainWindow.py" line="22"/>
-        <source>justCode - PySide6 e Python - tutorial</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../../app_pyside/components/MainWindow.py" line="21"/>
+        <source>Python - PySide6 - Qt</source>
+        <translation>Python - PySide6 - Qt</translation>
     </message>
     <message>
-        <location filename="../../../app_pyside/components/MainWindow.py" line="35"/>
+        <location filename="../../../app_pyside/components/MainWindow.py" line="38"/>
         <source>Este texto será alterado.</source>
-        <translation type="unfinished"></translation>
+        <translation>This text will be changed.</translation>
     </message>
     <message>
-        <location filename="../../../app_pyside/components/MainWindow.py" line="41"/>
+        <location filename="../../../app_pyside/components/MainWindow.py" line="44"/>
         <source>Digite algo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Type something.</translation>
     </message>
     <message>
-        <location filename="../../../app_pyside/components/MainWindow.py" line="46"/>
+        <location filename="../../../app_pyside/components/MainWindow.py" line="49"/>
         <source>Clique aqui</source>
-        <translation type="unfinished"></translation>
+        <translation>Click here</translation>
     </message>
     <message>
-        <location filename="../../../app_pyside/components/MainWindow.py" line="57"/>
+        <location filename="../../../app_pyside/components/MainWindow.py" line="58"/>
         <source>Digite algo no campo de texto ;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Type something in the text field ;).</translation>
     </message>
 </context>
 <context>
@@ -34,17 +34,17 @@
     <message>
         <location filename="../../../app_pyside/components/MenuBar.py" line="19"/>
         <source>Sair</source>
-        <translation type="unfinished"></translation>
+        <translation>Exit</translation>
     </message>
     <message>
         <location filename="../../../app_pyside/components/MenuBar.py" line="23"/>
         <source>Sair do aplicativo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exit the app.</translation>
     </message>
     <message>
         <location filename="../../../app_pyside/components/MenuBar.py" line="28"/>
         <source>Arquivo</source>
-        <translation type="unfinished"></translation>
+        <translation>File</translation>
     </message>
 </context>
 </TS>
