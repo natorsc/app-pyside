@@ -1,31 +1,31 @@
 [tool.poetry]
-name = "app-pyside"
-version = "0.1.0"
-description = ""
-authors = ["Renato Cruz <natorsc@gmail.com>"]
-maintainers = ["Renato Cruz <natorsc@gmail.com>"]
-readme = ["README.md", "README.pt-br.md"]
-license = "MIT"
-repository = "https://github.com/natorsc/app-pyside"
+name = 'app-pyside'
+version = '0.1.0'
+description = 'Exemplo de aplicativo feito com a linguagem de programação Python, o binding PySide e o framework gráfico Qt.'
+authors = ['Renato Cruz <natorsc@gmail.com>']
+maintainers = ['Renato Cruz <natorsc@gmail.com>']
+readme = ['README.md', 'README.pt-br.md']
+license = 'MIT'
+repository = 'https://github.com/natorsc/app-pyside'
 classifiers = [
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.13"
-pyside6 = "^6.7.2"
+python = '>=3.11,<3.13'
+pyside6 = '^6.7.2'
 
 [tool.poetry.group.dev.dependencies]
-taskipy = "^1.13.0"
-ruff = "^0.5.0"
+taskipy = '^1.13.0'
+ruff = '^0.5.0'
 
 [tool.poetry.scripts]
-app-pyside = "app_pyside.app:main"
+app-pyside = 'app_pyside.app:main'
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'
 
 [tool.ruff]
 line-length = 79
@@ -45,4 +45,4 @@ format = 'ruff check . --fix && ruff format .'
 lint = 'ruff check . && ruff check . --diff'
 lupdate = 'python _scripts/translations.py'
 rcc = 'python _scripts/compile_resources.py'
-test = "python -m unittest"
+test = 'python -m unittest'

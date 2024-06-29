@@ -3,6 +3,7 @@
 
 import locale
 import sys
+from ctypes import windll
 
 from PySide6 import QtCore, QtGui, QtWidgets
 
@@ -34,8 +35,6 @@ def main() -> None:
         application.installTranslator(translator)
 
     if QtCore.QSysInfo.productType() == 'windows':
-        from ctypes import windll
-
         windll.shell32.SetCurrentProcessExplicitAppUserModelID(
             APPLICATION_NAME,
         )

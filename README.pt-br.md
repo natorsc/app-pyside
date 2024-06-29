@@ -2,8 +2,8 @@
 
 <br>
 
-[![en](https://img.shields.io/badge/lang-en-darkred.svg)](./README)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-darkgreen.svg)](./README.pt-br)
+[![en](https://img.shields.io/badge/lang-en-darkred.svg)](./README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-darkgreen.svg)](./README.md.pt-br.md)
 
 # Exemplo de como estruturar um projeto com Python e Qt
 
